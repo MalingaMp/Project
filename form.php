@@ -15,6 +15,7 @@ include('connection.php');
             <div class="row">
                 <div class="panel panel-primary p-3 text-primary-emphasis  ">
                     <div class="panel-heading  ">
+                        <a href="home.php" class="btn btn-success align-items-start mb-3">Home</a>
                         <h3 class="text-primary">REGISTRATION FORM</h3>
                     </div>
                     <div class="panel-body p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
@@ -47,12 +48,12 @@ include('connection.php');
                             <label>Gender</label>
                             <div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-                                    <label class="form-check-label" for="male">Male</label>
+                                    <input class="form-check-input" type="radio" name="gender value=" Male">
+                                    <label class="form-check-label" for="Male">Male</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                                    <label class="form-check-label" for="female">Female</label>
+                                    <input class="form-check-input" type="radio" name="gender" value="Female">
+                                    <label class="form-check-label" for="Female">Female</label>
                                 </div>
                             </div>
                         </div>

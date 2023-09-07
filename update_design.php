@@ -23,14 +23,14 @@ $result = mysqli_fetch_assoc($data);
     <div class="container d-flex justify-content-center w-50 p-3">
         <form action="#" method="POST">
             <div class="row">
-                <div class="panel panel-primary  ">
+                <div class="panel panel-primary   ">
 
-                    <div class="panel-heading border p-2  mb-3">
+                    <div class="panel-heading p-3 text-primary-emphasis ">
                         <h3 class="text-primary">Update Your Details</h3>
                     </div>
 
 
-                    <div class="panel-body">
+                    <div class="panel-body p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
 
                         <div class="form-group">
                             <label for="first_name">First Name:</label>
@@ -63,14 +63,28 @@ $result = mysqli_fetch_assoc($data);
                         </div>
 
                         <div class="form-group">
-                            <label>Gender:</label>
-                            <select name="gender" class="form-select" aria-label="Default select example">
-                                <option selected>select</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
-
+                            <label>Gender</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" value="Male" required <?php
+                                                                                                                        if ($result['gender'] == "Male") {
+                                                                                                                            echo "checked";
+                                                                                                                        }
+                                                                                                                        ?>>
+                                    <label class="form-check-label" for="Male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" value="Female" required <?php
+                                                                                                                        if ($result['gender'] == "Female") {
+                                                                                                                            echo "checked";
+                                                                                                                        }
+                                                                                                                        ?>>
+                                    <label class="form-check-label" for="Female">Female</label>
+                                </div>
+                            </div>
                         </div>
+
+
                         <a href="./display.php">
                             <input type="submit" name="update" class="btn btn-primary" value="Update">
                         </a>
