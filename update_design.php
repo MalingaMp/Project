@@ -13,7 +13,7 @@ $result = mysqli_fetch_assoc($data);
 
 <head>
     <title>Update Details</title>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 </head>
 
 <body>
@@ -110,7 +110,7 @@ if (isset($_POST['update'])) {
     if ($data) {
         echo "<script>alert('Record Updated')</script>";
 ?>
-        <meta http-equiv="refresh" content="0; url = http://localhost/form/extraform/display.php" />
+        <meta http-equiv="refresh" content="0; url = http://localhost/home/display.php" />
 <?php
     } else {
         echo "failed to update" . mysqli_connect_error();

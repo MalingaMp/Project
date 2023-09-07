@@ -13,10 +13,10 @@
         <p>Choose an option below:</p>
         <div class="row">
             <div class="col-md-6">
-                <a href="registration_form.php" class="btn btn-primary btn-lg btn-block">Register</a>
+                <a href="form.php" class="btn btn-primary btn-lg btn-block">Screen 1 (Registration Form)</a>
             </div>
             <div class="col-md-6">
-                <a href="display.php" class="btn btn-success btn-lg btn-block">Display Records</a>
+                <a href="display.php" class="btn btn-success btn-lg btn-block">Screen 2 (Display Records)</a>
             </div>
         </div>
     </div>
