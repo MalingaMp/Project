@@ -21,7 +21,7 @@
 
     if ($total > 0) {
     ?>
-        // this below line are generates the records in table formate
+        <!-- this below line are generates the records in table formate -->
 
         <h2 align="center" class="text-primary"><a href="home.php" class="btn btn-info align-items-start  mb-2">Home</a>Registered All Records</h2>
         <div class="container">
