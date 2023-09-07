@@ -24,14 +24,14 @@
             <table class="table table-bordered table-striped">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Email</th>
-                        <th>Phone No</th>
-                        <th>Password</th>
-                        <th>Gender</th>
-                        <th>Edit</th>
+                        <th class="text-center">Id</th>
+                        <th class="text-center">First Name</th>
+                        <th class="text-center">Last Name</th>
+                        <th class="text-center">Email</th>
+                        <th class="text-center">Phone No</th>
+                        <th class="text-center">Password</th>
+                        <th class="text-center">Gender</th>
+                        <th class="text-center">Edit</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -45,7 +45,8 @@
                             <td>" . $result['phone_no'] . "</td>
                             <td>" . $result['password'] . "</td>
                             <td>" . $result['gender'] . "</td>
-                            <td><a href='update_design.php?id=$result[id]' class='btn btn-primary'>Update</a></td>
+                            <td><a href='update_design.php?id=$result[id]' class='btn btn-success'>Update</a>
+                            <a href='delete.php?id=$result[id]' class='btn btn-danger' onclick= 'return checkdelete()'>Delete</a></td>
                         </tr>";
                     }
                     ?>
@@ -58,5 +59,11 @@
     }
     ?>
 </body>
+<script>
+    function checkdelete() {
+        return confirm('Are you sure your want to delete this record')
+
+    }
+</script>
 
 </html>
