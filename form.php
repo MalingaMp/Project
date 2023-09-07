@@ -13,12 +13,12 @@ include('connection.php');
     <div class="container d-flex justify-content-center w-50 p-3">
         <form action="#" method="POST">
             <div class="row">
-                <div class="panel panel-primary">
-                    <div class="panel-heading border p-2 mb-3">
+                <div class="panel panel-primary p-3 text-primary-emphasis  ">
+                    <div class="panel-heading  ">
                         <h3 class="text-primary">REGISTRATION FORM</h3>
                     </div>
-                    <div class="panel-body">
-                        <div class="form-group">
+                    <div class="panel-body p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+                        <div class=" form-group">
                             <label for="first_name">First Name</label>
                             <input type="text" name="first_name" class="form-control" id="first_name" pattern="[A-Za-z]+" required>
                         </div>
@@ -45,15 +45,21 @@ include('connection.php');
 
                         <div class="form-group">
                             <label>Gender</label>
-                            <select name="gender" class="form-select" aria-label="Default select example">
-                                <option selected>select</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                            </div>
                         </div>
 
+
                         <div class="form-group text-center">
-                            <input type="submit" name="register" class="btn btn-primary" value="Submit">
+                            <input type="submit" name="register" class="btn btn-primary btn-block" value="Submit">
                         </div>
 
                     </div>
