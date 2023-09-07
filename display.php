@@ -9,7 +9,9 @@
 </head>
 
 <body>
+
     <?php
+    // below code for fetching the record from the users table from database
     include('connection.php');
 
     $query = "SELECT * FROM users";
@@ -19,7 +21,7 @@
 
     if ($total > 0) {
     ?>
-
+        // this below line are generates the records in table formate
 
         <h2 align="center" class="text-primary"><a href="home.php" class="btn btn-info align-items-start  mb-2">Home</a>Registered All Records</h2>
         <div class="container">
@@ -36,6 +38,7 @@
                         <th class="text-center">Edit</th>
                     </tr>
                 </thead>
+
                 <tbody>
                     <?php
                     while ($result = mysqli_fetch_assoc($data)) {

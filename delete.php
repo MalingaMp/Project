@@ -1,6 +1,6 @@
 <?php
 include('connection.php');
-
+// this code will delete the record record selected id
 $id = $_GET['id'];
 
 $query = "DELETE FROM users WHERE id='$id' ";

@@ -1,6 +1,7 @@
 <?php
 include('connection.php');
-
+// the below code for updating the records
+//this below lines are help to fill the old record in the field  
 $id = $_GET['id'];
 $query = "SELECT * FROM users where id = '$id'";
 $data = mysqli_query($conn, $query);
@@ -105,6 +106,7 @@ $result = mysqli_fetch_assoc($data);
 </html>
 
 <?php
+//the below code will update the record
 if (isset($_POST['update'])) {
 
     $first_name  = $_POST["first_name"];
@@ -122,8 +124,12 @@ if (isset($_POST['update'])) {
     $data = mysqli_query($conn, $query);
 
     if ($data) {
+        //user get the alert message
+
         echo "<script>alert('Record Updated')</script>";
 ?>
+        <!-- the below meta tag helps to redirect the records page -->
+
         <meta http-equiv="refresh" content="0; url = http://localhost/home/display.php" />
 <?php
     } else {

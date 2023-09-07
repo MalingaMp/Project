@@ -71,8 +71,8 @@ include('connection.php');
 </body>
 
 </html>
-
 <?php
+// when user submit the button below code insert the new record
 if (isset($_POST['register'])) {
 
     $first_name  = $_POST["first_name"];
@@ -89,7 +89,7 @@ if (isset($_POST['register'])) {
 
     if ($data) {
         echo "<script>alert('Form Submitted Successfully')</script>";
-        // Uncomment the following lines to redirect to another page after successful registration
+        //  following lines to redirect to another page after successful registration
 ?>
         <meta http-equiv="refresh" content="0; url = http://localhost/home/home.php" />
 <?php
