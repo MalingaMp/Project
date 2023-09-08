@@ -15,10 +15,13 @@ $result = mysqli_fetch_assoc($data);
 <head>
     <title>Update Details</title>
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 
 <body>
 
+    <a href="home.php"> <i class="fa fa-home text-dark  bg-secondary p-2 mb-3" aria-hidden="true">Home</i></a>
 
 
     <div class="container d-flex justify-content-center w-50 p-3">
@@ -75,11 +78,11 @@ $result = mysqli_fetch_assoc($data);
                                     <label class="form-check-label" for="Male">Male</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gender" value="Female" required <?php
-                                                                                                                        if ($result['gender'] == "Female") {
-                                                                                                                            echo "checked";
-                                                                                                                        }
-                                                                                                                        ?>>
+                                    <input class="form-check-input" type="radio" name="gender" value="Female" <?php
+                                                                                                                if ($result['gender'] == "Female") {
+                                                                                                                    echo "checked";
+                                                                                                                }
+                                                                                                                ?>>
                                     <label class="form-check-label" for="Female">Female</label>
                                 </div>
                             </div>
