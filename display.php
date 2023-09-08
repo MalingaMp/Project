@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Records</title>
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 
 <body>
@@ -22,8 +24,9 @@
     if ($total > 0) {
     ?>
         <!-- this below line are generates the records in table formate -->
+        <a href="home.php"> <i class="fa fa-home text-dark  bg-secondary p-2 mb-3" aria-hidden="true">Home</i></a>
 
-        <h2 align="center" class="text-primary"><a href="home.php" class="btn btn-info align-items-start  mb-2">Home</a>Registered All Records</h2>
+        <h2 align="center" class="text-primary">Registered All Records</h2>
         <div class="container">
             <table class="table table-bordered table-striped">
                 <thead>

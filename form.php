@@ -7,15 +7,20 @@ include('connection.php');
 <head>
     <title>Screen 1 - Registration Form</title>
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 
 <body>
+    <div>
+        <a href="home.php"> <i class="fa fa-home text-dark  bg-secondary p-2 mb-3" aria-hidden="true">Home</i></a>
+    </div>
     <div class="container d-flex justify-content-center w-50 p-3">
         <form action="#" method="POST">
             <div class="row">
                 <div class="panel panel-primary p-3 text-primary-emphasis  ">
                     <div class="panel-heading  ">
-                        <a href="home.php" class="btn btn-success align-items-start mb-3">Home</a>
+
                         <h3 class="text-primary">REGISTRATION FORM</h3>
                     </div>
                     <div class="panel-body p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
@@ -48,15 +53,16 @@ include('connection.php');
                             <label>Gender</label>
                             <div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gender value=" Male">
+                                    <input class="form-check-input" type="radio" name="gender" id="Male" value="Male" required>
                                     <label class="form-check-label" for="Male">Male</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gender" value="Female">
+                                    <input class="form-check-input" type="radio" name="gender" id="Female" value="Female">
                                     <label class="form-check-label" for="Female">Female</label>
                                 </div>
                             </div>
                         </div>
+
 
 
                         <div class="form-group text-center">
